@@ -20,15 +20,20 @@
 
 
           stopBtn.addEventListener('click', function(e){
-           stopLt.classList.add('stop');
+           stopLt.classList.toggle('stop');
+           console.log(e.target);
       });
+      
+
 
         slowBtn.addEventListener('click', function(e){
-           slowLt.classList.add('slow');
+           slowLt.classList.toggle('slow');
+               console.log(e.target);
       });
 
         goBtn.addEventListener('click', function(e){
-           goLt.classList.add('go');
+           goLt.classList.toggle('go');
+             console.log(e.target);
       });
 
      // }
